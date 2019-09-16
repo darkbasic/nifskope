@@ -428,13 +428,14 @@ win32 {
 	#  Optimization flags
 	QMAKE_CXXFLAGS_DEBUG -= -O0 -g
 	QMAKE_CXXFLAGS_DEBUG *= -Og -g3
-	QMAKE_CXXFLAGS_RELEASE *= -O3 -mfpmath=sse
+	#QMAKE_CXXFLAGS_RELEASE *= -O3 -mfpmath=sse
+	QMAKE_CXXFLAGS_RELEASE *= -O3
 
 	# C++11 Support
 	QMAKE_CXXFLAGS_RELEASE *= -std=c++14
 
 	#  Extension flags
-	QMAKE_CXXFLAGS_RELEASE *= -msse2 -msse
+	#QMAKE_CXXFLAGS_RELEASE *= -msse2 -msse
 }
 
 win32 {
